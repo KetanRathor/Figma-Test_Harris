@@ -32,9 +32,8 @@ export async function loadHeader(selector) {
     $(selector).html(html);
 
 
-    // =====================================================
     // Render Header Data
-    // =====================================================
+    
 
     renderPatientData();
 
@@ -43,9 +42,7 @@ export async function loadHeader(selector) {
     renderSuccessMessage();
 
 
-    // =====================================================
     // Generate Reusable Buttons
-    // =====================================================
 
     renderHeaderButtons();
 
