@@ -1,0 +1,153 @@
+
+   /* Prescription Section */
+
+
+.prescription-section {
+
+  width: 100%;
+
+}
+
+
+
+   /* Toolbar */
+
+
+.section-toolbar {
+
+  display: flex;
+
+  gap: 25px;
+
+  align-items: center;
+
+  margin-bottom: 8px;
+
+}
+
+
+.section-title-actions {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+}
+
+
+
+   /* Square Buttons */
+
+
+.square-btn {
+
+  width: 19px;
+
+  height: 19px;
+
+  padding: 0;
+
+  border:
+    1px solid #666;
+
+  background: transparent;
+
+  color: #333;
+
+  line-height: 15px;
+
+}
+
+
+.square-btn:hover {
+
+  background: #f2f2f2;
+
+}
+
+
+
+   /* Tabs */
+
+
+.small-tabs .nav-link {
+
+  border:
+    1px solid #5870c3;
+
+  color: #334a9d;
+
+  padding:
+    4px 11px;
+
+  margin-right: 8px;
+
+  border-radius: 4px;
+
+  background: white;
+
+}
+
+
+.small-tabs .nav-link.active {
+
+  background: white;
+
+  color: #334a9d;
+
+}
+
+
+.small-tabs .nav-link:hover {
+
+  background: #f5f7ff;
+
+}
+
+
+
+   /* Medication History */
+
+
+.history-panel {
+
+  min-height: 595px;
+
+  border:
+    1px solid #bbb;
+
+  padding: 50px;
+
+  text-align: center;
+
+  color: #6874a0;
+
+}
+
+
+.history-panel i {
+
+  font-size: 30px;
+
+  display: block;
+
+  margin-bottom: 10px;
+
+}
+
+
+
+   /* Responsive */
+
+
+@media (max-width: 650px) {
+
+  .section-toolbar {
+
+    flex-wrap: wrap;
+
+  }
+
+}

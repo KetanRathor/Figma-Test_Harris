@@ -1,0 +1,526 @@
+
+   /* Global */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #444;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+}
+
+button {
+  font: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+
+  padding:
+    0 30px 60px;
+}
+
+
+
+   /* Patient Header */
+
+
+/* .patient-header {
+  min-height: 47px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 2.1fr)
+    minmax(0, 1.35fr)
+    minmax(0, 1.35fr)
+    minmax(0, 0.9fr)
+    minmax(0, 0.9fr)
+    auto;
+
+  border-bottom:
+    1px solid #aeb4ba;
+
+  background:
+    linear-gradient(
+      #eefefe,
+      #e2fafa
+    );
+
+  overflow: hidden;
+} */
+
+.patient-header {
+  width: calc(100% + 60px);
+
+  margin-left: -30px;
+  margin-right: -30px;
+
+  min-height: 47px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(0, 1.35fr)
+    minmax(0, 1.35fr)
+    minmax(0, 0.9fr)
+    minmax(0, 0.9fr)
+    auto;
+
+  border-bottom:
+    1px solid #aeb4ba;
+
+  background:
+    linear-gradient(
+      #eefefe,
+      #e2fafa
+    );
+
+  overflow: hidden;
+}
+
+
+
+   /* Patient Main Information */
+
+
+.patient-main {
+  display: grid;
+
+  grid-template-columns:
+    47px
+    minmax(0, 1fr);
+
+  min-width: 0;
+
+  border-right:
+    1px solid #c5cbce;
+}
+
+
+
+   /* Patient Avatar */
+
+
+.patient-avatar {
+  width: 47px;
+  height: 47px;
+
+  display: grid;
+
+  place-items: center;
+
+  color: #8c8c8c;
+
+  font-size: 28px;
+
+  border-right:
+    1px solid #c7cccc;
+}
+
+
+
+   /* Patient Summary */
+
+
+.patient-summary {
+  min-width: 0;
+
+  padding:
+    3px 8px;
+
+  line-height: 18px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+  /* color: #001c9e; */
+}
+
+
+
+
+   /* Encounter Information */
+
+
+.patient-meta {
+  min-width: 0;
+
+  padding:
+    3px 8px;
+
+  line-height: 18px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  border-right:
+    1px solid #c5cbce;
+}
+
+.patient-name,
+.case-label {
+  color: #001c9e;
+}
+
+.location-value {
+  color: #797b84;
+}
+
+
+   /* Header Text Rows */
+
+
+.patient-summary > div,
+.patient-meta > div {
+  min-width: 0;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+
+
+   /* Future Visit Block */
+
+
+.patient-meta.future {
+  min-width: 0;
+
+  display: flex;
+
+    align-items: flex-start;
+
+  padding:
+    3px 8px;
+
+  line-height: 18px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  border-right:
+    1px solid #c5cbce;
+}
+
+
+
+   /* Risk / Case Block */
+
+
+.patient-meta.risk {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding:
+    3px 8px;
+
+  line-height: 18px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  border-right:
+    1px solid #c5cbce;
+}
+
+
+
+   /* Header Labels */
+
+
+.patient-summary strong,
+.patient-meta strong {
+  /* color: #001c9e; */
+}
+
+
+
+
+   /* Patient Header Font Size */
+
+
+.patient-header {
+  font-size: 11px;
+}
+
+.patient-summary,
+.patient-meta {
+  font-size: 11px;
+}
+
+.patient-summary strong,
+.patient-meta strong,
+.patient-summary span,
+.patient-meta span {
+  font-size: 11px;
+}
+
+   /* Header Actions */
+
+
+.header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding:
+    0 8px;
+
+  color: #5e6b8e;
+
+  white-space: nowrap;
+}
+
+.header-actions button,
+.tool-icons button {
+  border: 0;
+
+  background: transparent;
+
+  color: #5869a0;
+}
+
+.header-actions button:hover,
+.tool-icons button:hover {
+  color: #263d8e;
+}
+
+
+
+   /* Success Message */
+
+
+.success-message {
+  text-align: center;
+
+  color: #0aa400;
+
+  font-size: 14px;
+
+  padding:
+    7px 0;
+}
+
+
+
+   /* Quick Panel */
+
+
+.quick-panel {
+  min-height: 88px;
+
+  border:
+    1px solid #b9b9b9;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: stretch;
+
+  margin:
+    2px 0 18px;
+
+  padding:
+    10px 18px;
+}
+
+
+
+   /* Allergy Box */
+
+
+.allergy-box {
+  flex: 1;
+
+  background: #f6f6f6;
+
+  border-radius: 5px;
+
+  padding:
+    5px 10px;
+
+  color: red;
+
+  min-height: 66px;
+}
+
+
+
+   /* Quick Tools */
+
+
+.quick-tools {
+  width: 50%;
+
+  padding-left: 25px;
+}
+
+
+
+   /* Tool Icons */
+
+
+.tool-icons {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 11px;
+
+  height: 32px;
+
+  align-items: center;
+}
+
+
+
+   /* Visit Actions */
+
+
+.visit-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  gap: 28px;
+}
+
+
+
+   /* Visit Buttons */
+
+
+.visit-btn {
+  border: 0;
+
+  background: transparent;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  color: #333;
+}
+
+.visit-btn i {
+  color: #5869a0;
+}
+
+
+
+   /* PMH Button */
+
+
+.pmh-btn {
+  width: 70px;
+
+  color:
+    var(--primary-color);
+
+  border-color:
+    var(--primary-color);
+
+  background-color:
+    var(--white);
+}
+
+.pmh-btn:hover {
+  color:
+    var(--white);
+
+  background-color:
+    var(--primary-color);
+
+  border-color:
+    var(--primary-color);
+}
+
+
+
+   /* Responsive - Tablet */
+
+
+@media (max-width: 1100px) {
+
+  .patient-header {
+    grid-template-columns:
+      1fr
+      1fr;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .quick-panel {
+    flex-direction: column;
+  }
+
+  .quick-tools {
+    width: 100%;
+
+    padding:
+      8px 0 0;
+  }
+
+  .tool-icons,
+  .visit-actions {
+    justify-content: flex-start;
+  }
+}
+
+
+
+   /* Responsive - Mobile */
+
+
+@media (max-width: 650px) {
+
+  .app-shell {
+    padding:
+      0 10px 40px;
+  }
+
+  .patient-header {
+    display: block;
+  }
+
+  .patient-meta {
+    border-top:
+      1px solid #ddd;
+  }
+
+  .visit-actions {
+    flex-wrap: wrap;
+  }
+}

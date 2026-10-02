@@ -1,0 +1,70 @@
+
+   /* Footer */
+
+
+.page-footer {
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  margin-top: 20px;
+
+}
+
+
+.action-btn {
+
+  min-width: 80px;
+
+  background: #5d70b8;
+
+  border-color: #5d70b8;
+
+}
+
+
+.action-btn:hover {
+
+  background: #4f62a8;
+
+  border-color: #4f62a8;
+
+}
+
+
+
+   /* Modal */
+
+
+.modal-title {
+
+  font-size: 17px;
+
+}
+
+
+.modal-body {
+
+  font-size: 13px;
+
+}
+
+
+
+   /* Responsive */
+
+
+@media (max-width: 650px) {
+
+  .page-footer {
+
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+
+  }
+
+}

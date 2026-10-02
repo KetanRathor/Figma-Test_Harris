@@ -1,0 +1,21 @@
+:root {
+  /* Primary Colors */
+  --primary-color: #5F71B4;
+ 
+
+  
+  --text-color: #464646;
+ 
+
+  /* Border Colors */
+  --border-color: #C6C6C6;
+  
+
+  /* Background Colors */
+  --white: #ffffff;
+  --table-row-bg: #eff8df;
+
+  /* Status Colors */
+  --success-color: #0aa400;
+  --danger-color: #ff0000;
+}
